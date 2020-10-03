@@ -1,11 +1,3 @@
-// Assignment Code
-
-// Write password to the #password input
-function writePassword() {
-  var passwordText = document.querySelector("#password");
-  //passwordText.value = password;
-}
-
 //open criteria modal.
 var openPopUpButton =  document.querySelector("#specifyCriteria");
 openPopUpButton.addEventListener("click", function(){
@@ -96,7 +88,6 @@ function performPasswordGenerationOperation(userPaswordLenght, lowerCase, upperC
     requiredPasswordCharacters.push(charactersToChooseFrom[Math.floor(Math.random() * charactersToChooseFrom.length)]);
   }
   var actualFinalPassword = requiredPasswordCharacters.join('');
-  console.log("Actual password is - "+ actualFinalPassword)
   var passwordText = document.querySelector("#password");
   passwordText.value = actualFinalPassword; 
 }
