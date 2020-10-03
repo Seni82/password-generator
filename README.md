@@ -25,5 +25,9 @@ Implementing codes, and prompting worked well and effectively.
 
 
 # Issue 
-Non Identifed at present. However, issues might surface during the course of using the platform
+Non Identifed at present. However, issues might surface during the course of using the platform.
+
+
+# Coming update.
+ I would be adding the capability to dynamically add dropdownlist options for character length rather than manually adding the long list numbers which makes the html file too long
 
