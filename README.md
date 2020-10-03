@@ -6,21 +6,21 @@ Password Generator - An application that an employee can use to generate a rando
 
  
 # Password Generator
-Users can easily generate a password when they want to access sensitive data.
+Users can easily randomly generate password when they want to access sensitive data using a combination of password length and character types specified.
 
 # How to access?
 The website can be found at the following address:
 
 
 
-Password Generator
+**Password Generator**
 Features added:
-- Activate popup for criteria specification.
-- Validation to ensure atleast 1 character type is selected
+- Activate modal popup for criteria specification.
+- Validation to ensure atleast 1 character type is selected.
 - Activated 'Generate Password' Button
-- Selected features added including length of password, lowercase, uppercase, numeric, and special characters
+- Selected features added including length of password, lowercase, uppercase, numeric, and special characters.
 - HTML5, CSS3, JavaScript used.
-- Website is responsive for use on any device
+- Website is responsive for use on any device.
 Implementing codes, and prompting worked well and effectively. 
 
 
