@@ -73,23 +73,23 @@ function performPasswordGenerationOperation(userPaswordLenght, lowerCase, upperC
 {
   var requiredPasswordCharacters = [];
   var charactersToChooseFrom =[];
-  if(lowerCase != "")
+  if(lowerCase != null)
   {
      var lower = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
      requiredPasswordCharacters.push(lower[Math.floor(Math.random() * lower.length)]);
      charactersToChooseFrom = charactersToChooseFrom.concat(lower);
   }
-  if(upperCase != ""){
+  if(upperCase != null){
     var upper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
     requiredPasswordCharacters.push(upper[Math.floor(Math.random() * upper.length)]);
     charactersToChooseFrom = charactersToChooseFrom.concat(upper);
   }
-  if(specialChar != ""){
+  if(specialChar != null){
     var special = ['@','£','$','%','^','&','*','(','_',')','-','_','+','=','!','#','€','{','}','[',']',':','~','?'];
     requiredPasswordCharacters.push(special[Math.floor(Math.random() * special.length)]);
     charactersToChooseFrom = charactersToChooseFrom.concat(special);
   }
-  if(numeric != ""){
+  if(numeric != null){
     var num = ['0','1','2','3','4','5','6','7','8','9'];
     requiredPasswordCharacters.push(num[Math.floor(Math.random() * num.length)]);
     charactersToChooseFrom = charactersToChooseFrom.concat(num);
