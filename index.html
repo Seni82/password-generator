@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainLayout">
+      <div class="popup-overlay"></div>
+      <div class="popup">
+        <div class="popup-close">&times;</div>
+        <div class="form">
+          <p class="notification"><strong>Select password criteria from below :</strong></p>
+          <div class="element" id="selectCharLength">
+    <label class="dropdown">Select character length from list: <select id="charLength">
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="60">60</option>
+              <option value="70">70</option>
+              <option value="80">80</option>
+              <option value="90">90</option>
+              <option value="100">100</option>
+              <option value="110">110</option>
+              <option value="120">120</option>
+              <option value="128">128</option>
+              </select>
+            </label>   
+          </div>
+          <div class="element" id="characterType">
+            <label>Select character type to include in password: <br/>
+            <label for="lowerCase" class="charTypeCheckBox">Lower case  (abc): <input onclick="hideValidationOnCheckBoxClick()" type="checkbox" id="lowerCase" name="charTypeCheckBox" value="lower case"/>
+              </label>
+            <label for="upperCase" class="charTypeCheckBox">Upper case (ABC): <input onclick="hideValidationOnCheckBoxClick()" type="checkbox" id="upperCase" name="charTypeCheckBox" value="upper case"/>
+              </label>
+            <label for="lowerCase" class="charTypeCheckBox">Numeric (123):<input onclick="hideValidationOnCheckBoxClick()" type="checkbox" id="numeric" name="charTypeCheckBox" value="numeric"/>
+              </label>
+              <label for="specChar" class="charTypeCheckBox">Special character (@£$_):<input onclick="hideValidationOnCheckBoxClick()" type="checkbox" id="special" name="charTypeCheckBox" value="special character"/>
+                </label>
+            </label>
+            <p id="charTypeError" class="charTypeError">You must select atleast 1 character type from options above.</p>
+            </div> 
+        </div>
+        <button id="submit" class="btn submitToGeneratePassword">  
+             Generate Password
+        </button>
+      </div>
+      </div>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password">
+          </textarea>  
+          <button id="clipBoard" onclick="copied()">Copy to clip board</button>         
+        </div>
+        <p id="passClipoard">Password copied to clipboard!!!</p>
+        <div class="card-footer">
+          <button id="specifyCriteria" class="btn">Specify Criteria</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
