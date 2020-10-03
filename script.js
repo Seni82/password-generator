@@ -55,9 +55,6 @@ listOfCheckBoxes.forEach(function(checkBox, index){
        }
      }
    }
-   //method call for generating password!
-  //performPasswordGenerationOperation(dataLengthUserSelects,userLowerCase,userUpperCase,userSpecChar,userNumeric);
-  //document.querySelector('#clipBoard').style.display = "block";
   });
   //method call for generating password!
   performPasswordGenerationOperation(dataLengthUserSelects,userLowerCase,userUpperCase,userSpecChar,userNumeric);
@@ -68,7 +65,6 @@ listOfCheckBoxes.forEach(function(checkBox, index){
 //clear validation if it exist when checkbox is clicked.
 function hideValidationOnCheckBoxClick(){
   document.querySelector('#charTypeError').style.display = "none";
-  console.log("************************************************* after ticking checkbox")
 }
 
 
