@@ -24,6 +24,35 @@ Features added:
 Implementing codes, and prompting worked well and effectively. 
 
 
+
+# Website Screenshots:
+
+**Main website.**
+!["Main Website Page"](./Screenshots/mainPage.jpg?raw=true  "Website Main Page.")
+
+
+**Modal popup.**
+!["Modal"](./Screenshots/modalForPswrdCriteria.jpg?raw=true "Modal popup for password selection criteria.")
+
+
+**Character length**
+!["Character Length"](./Screenshots/charLengthDropdown.jpg?raw=true "Character lenght dropdown for specifying length.")
+
+
+**Checkboxes.**
+!["Checkboxes"](./Screenshots/criteriaCheckboxes.jpg?raw=true "Checkbox options for password criteria.")
+
+
+**Generated password with clipboard option.**
+!["Generated Password with clipboard option"](./Screenshots/pswdGeneratedAndClipboard.png?raw=true "Generated Password with clipboard option.")
+
+
+
+
+
+
+
+
 # Issue 
 Non Identifed at present. However, issues might surface during the course of using the platform.
 
