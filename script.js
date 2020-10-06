@@ -1,7 +1,13 @@
 //open criteria modal.
 var openPopUpButton =  document.querySelector("#specifyCriteria");
+var passwordText = document.querySelector("#password");
 openPopUpButton.addEventListener("click", function(){
-  document.body.classList.add("mainLayout")
+if(passwordText.value != null)
+{
+  passwordText.value = "";
+}
+ document.body.classList.add("mainLayout")
+ document.getElementsByName("charTypeCheckBox").checked = "";
 });
 
 //dismiss popup with cancel
